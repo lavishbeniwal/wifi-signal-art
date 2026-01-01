@@ -1,7 +1,7 @@
-from wifi.simulator import simulate_scan
+from wifi.scanner import scan_wifi
 from art.mapper import map_signals
 from art.renderer import render_art
 
-wifi_data = simulate_scan()
+wifi_data = scan_wifi()
 visuals = map_signals(wifi_data)
 render_art(visuals)
